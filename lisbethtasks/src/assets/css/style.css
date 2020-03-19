@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap');
+html,
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-size: .9rem;
+    /* scroll-behavior: smooth; */
+    overflow-x: hidden !important;
+}
+
+.hero-section {
+    height: 600px !important;
+    background-image: url('../img/hero-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner-section {
+    height: 300px !important;
+    background-image: url('../img/products-banner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.story-banner {
+    background-image: url('../img/our-story-banner.png');
+}
+
+.savannah-banner {
+    background-image: url('../img/savannah-banner.png');
+}
+
+.faq-banner {
+    background-image: url('../img/faq-banner.png');
+}
+
+.contact-banner {
+    background-image: url('../img/contact-banner.png');
+}
+
+.hotspot-banner {
+    background-image: url('../img/hotspot-banner.png');
+}
+
+.wifiber-banner {
+    background-image: url('../img/wifiber-banner.png');
+}
+
+.corp-banner {
+    background-image: url('../img/corp-banner.png');
+}
+
+.value-banner {
+    background-image: url('../img/value-banner.png');
+}
+
+.get-banner {
+    background-image: url('../img/get-connected-banner.png');
+}
+
+.pt3 {
+    padding-top: 3rem !important;
+}
+
+.pt14 {
+    padding-top: 14rem !important;
+}
+
+.nav-transparent {
+    background: transparent;
+    position: relative;
+    z-index: 99;
+}
+
+li.nav-item,
+a.nav-item {
+    text-decoration: none;
+    color: #F4B334;
+    position: relative;
+}
+
+li.nav-item::after,
+a.nav-item::after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    /* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
+    bottom: 0;
+    /* center - (optional) use with adjusting width   */
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 4%;
+    background: transparent;
+    /* optional animation */
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+li.nav-item:hover::after,
+a.nav-item:hover::after {
+    width: 50%;
+    background: #F4B334;
+}
+
+li.active::after,
+a.active::after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    /* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
+    bottom: 0;
+    /* center - (optional) use with adjusting width   */
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: #F4B334;
+    /* optional animation */
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.nav-item a.dropdown-item {
+    font-size: .9rem;
+    color: #0971CE;
+}
+
+.nav-item a.dropdown-item:hover {
+    color: #F4B334;
+}
+
+.nav-item a.dropdown-item.act {
+    background: #0971CE;
+    color: #ffffff;
+}
+
+h1#hero-text {
+    font-size: 4rem !important;
+}
+
+.underline {
+    text-decoration: none;
+    position: relative;
+}
+
+.underline:after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    /* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
+    bottom: -4px;
+    /* center - (optional) use with adjusting width   */
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 4%;
+    background: #e4e4e4;
+    /* optional animation */
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+
+/* optional hover classes used with anmiation */
+
+.underline:hover:after {
+    width: 14%;
+    background: #F4B334;
+}
+
+.h200 {
+    height: 200px !important;
+}
+
+.w-70 {
+    width: 70% !important;
+}
+
+.text-warning {
+    color: #F4B334 !important;
+}
+
+.bg-grey {
+    background: #E3E3E3 !important;
+}
+
+.bg-light-blue {
+    background: #56B3E4 !important;
+}
+
+.bg-blue {
+    background: #0971CE !important;
+}
+
+.f-2 {
+    font-size: 1.2rem !important;
+}
+
+.text-blue {
+    color: #0971CE !important;
+}
+
+.text-light-blue {
+    color: #56B3E4 !important;
+}
+
+.f400 {
+    font-weight: 400 !important;
+}
+
+.f600 {
+    font-weight: 600 !important;
+}
+
+.f700 {
+    font-weight: 700 !important;
+}
+
+.f800 {
+    font-weight: 800 !important;
+}
+
+.f900 {
+    font-weight: 900 !important;
+}
+
+.w100 {
+    max-width: 100px !important;
+}
+
+a>.text-center>img {
+    transition: .8s;
+}
+
+a>.text-center:hover>img {
+    /* border: 4px solid #ffffff; */
+    border-radius: 50% !important;
+    -webkit-box-shadow: 1px 35px 64px -20px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 1px 35px 64px -20px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 35px 64px -20px rgba(0, 0, 0, 0.5);
+}
+
+video {
+    width: 100% !important;
+    height: auto !important;
+}
+
+input[type=text],
+input[type=number],
+input[type=email],
+textarea,
+select {
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none !important;
+    border: 1px solid #DDDDDD;
+}
+
+input[type=text]:focus,
+input[type=number]:focus,
+input[type=email]:focus,
+textarea:focus,
+select:focus {
+    box-shadow: 0 0 4px rgb(255, 170, 0, .8) !important;
+    border: 1px solid #F4B334 !important;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.btn-orange {
+    border: 1px solid #F4B334 !important;
+    color: #F4B334 !important;
+    transition: 0.5s;
+}
+
+.btn-orange:hover {
+    background: #F4B334 !important;
+    color: #ffffff !important;
+}
+
+
+/* start of preloader */
+
+.spinner-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0971CE;
+    /* background-color: #F4B334; */
+    z-index: 999999;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 48%;
+    left: 48%;
+}
+
+.double-bounce1,
+.double-bounce2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #ffffff;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+    0%,
+    100% {
+        -webkit-transform: scale(0.0)
+    }
+    50% {
+        -webkit-transform: scale(1.0)
+    }
+}
+
+@keyframes sk-bounce {
+    0%,
+    100% {
+        transform: scale(0.0);
+        -webkit-transform: scale(0.0);
+    }
+    50% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+    }
+}
+
+
+/* end of preloader */
+
+@media only screen and (max-width: 991px) {
+    .navbar-toggler {
+        border: 1px solid #ffffff;
+        border-radius: 0;
+        color: #ffffff;
+    }
+    #main-nav {
+        background: #ffffff;
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 1rem;
+        text-align: center;
+        box-shadow: 1px 30px 60px -20px rgba(0, 0, 0, 0.5);
+    }
+    h1#hero-text {
+        font-size: 2rem !important;
+    }
+}
+
+
+/*
+
+Carousel slide
+
+*/
+
+@media (min-width: 768px) {
+    /* show 3 items */
+    .carousel-inner .active,
+    .carousel-inner .active+.carousel-item,
+    .carousel-inner .active+.carousel-item+.carousel-item {
+        display: block;
+    }
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item {
+        transition: none;
+        margin-right: initial;
+    }
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+    }
+    .carousel-inner .active.carousel-item+.carousel-item+.carousel-item+.carousel-item {
+        position: absolute;
+        top: 0;
+        right: -33.3333%;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    /* left or forward direction */
+    .active.carousel-item-left+.carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left+.carousel-item,
+    .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item,
+    .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    /* farthest right hidden item must be abso position for animations */
+    .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    /* right or prev direction */
+    .active.carousel-item-right+.carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right+.carousel-item,
+    .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item,
+    .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}
